@@ -1,16 +1,85 @@
-# React + Vite
+# Feedback Form
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a simple feedback form built using React. It allows users to leave comments, rate their experience, and edit or delete their feedback.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Add Feedback**: Users can submit their name, comment, and a rating (1-5).
+- **Edit Feedback**: Users can edit their previously submitted feedback.
+- **Delete Feedback**: Users can delete their feedback.
+- **Validation**: Ensures all fields are filled before submission.
 
-## React Compiler
+## Installation
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Mario-World/Build-with-React.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd Build-with-React/FeedbackForm
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-## Expanding the ESLint configuration
+## Usage
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Start the development server:
+   ```bash
+   npm run dev
+   ```
+2. Open your browser and navigate to:
+   ```
+   http://localhost:5173
+   ```
+
+## JSON Server (Optional)
+
+If you want to use `json-server` to simulate a backend:
+
+1. Install `json-server` globally:
+   ```bash
+   npm install -g json-server
+   ```
+2. Create a `db.json` file in the project root with the following structure:
+   ```json
+   {
+     "comments": []
+   }
+   ```
+3. Start the server:
+   ```bash
+   json-server --watch db.json --port 4000
+   ```
+
+## Technologies Used
+
+- React
+- Vite
+- JavaScript
+- CSS
+
+## Folder Structure
+
+```
+FeedbackForm/
+├── public/          # Static assets
+├── src/             # Source files
+│   ├── App.jsx      # Main component
+│   ├── main.jsx     # Entry point
+│   ├── App.css      # Component styles
+│   └── assets/      # Images and other assets
+├── package.json     # Project metadata and dependencies
+├── vite.config.js   # Vite configuration
+└── README.md        # Project documentation
+```
+
+## Contributing
+
+Contributions are welcome! Feel free to open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
