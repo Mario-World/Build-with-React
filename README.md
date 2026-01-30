@@ -35,9 +35,9 @@ This project is a simple feedback form built using React. It allows users to lea
    http://localhost:5173
    ```
 
-## JSON Server (Optional)
+## Mock Backend with JSON-Server
 
-If you want to use `json-server` to simulate a backend:
+This project includes an optional mock backend using `json-server` to simulate API interactions. Follow these steps to set it up:
 
 1. Install `json-server` globally:
    ```bash
@@ -53,6 +53,8 @@ If you want to use `json-server` to simulate a backend:
    ```bash
    json-server --watch db.json --port 4000
    ```
+
+The mock backend will be available at `http://localhost:4000`. You can use it to store and retrieve comments dynamically.
 
 ## Technologies Used
 
